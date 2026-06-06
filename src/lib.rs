@@ -392,7 +392,7 @@ impl CtokExtension {
         let text = format_check(&result);
         Ok(SlashCommandOutput {
             sections: vec![SlashCommandOutputSection {
-                range: 0..text.len(),
+                range: (0..text.len()).into(),
                 label: "ctok check".to_string(),
             }],
             text,
@@ -415,7 +415,7 @@ impl CtokExtension {
         let text = format_refine(&result);
         Ok(SlashCommandOutput {
             sections: vec![SlashCommandOutputSection {
-                range: 0..text.len(),
+                range: (0..text.len()).into(),
                 label: "ctok refine".to_string(),
             }],
             text,
@@ -434,7 +434,7 @@ impl CtokExtension {
         let text = format_scan(&result);
         Ok(SlashCommandOutput {
             sections: vec![SlashCommandOutputSection {
-                range: 0..text.len(),
+                range: (0..text.len()).into(),
                 label: "ctok scan".to_string(),
             }],
             text,
