@@ -10,8 +10,6 @@ crate-type = ["cdylib"]
 
 [dependencies]
 zed_extension_api = "0.2"
-serde = { version = "1", features = ["derive"] }
-serde_json = { version = "1", default-features = false, features = ["alloc"] }
 
 [profile.release]
 opt-level = "s"
